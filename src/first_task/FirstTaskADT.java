@@ -25,4 +25,9 @@ public interface FirstTaskADT {
      * This method is used to check the Number whether it is Spy Number or not.
      */
     void checkingNumberForSpyNumber();
+
+    /**
+     * This method will check the number is Neon Number or not.
+     */
+    void checkingNumberForNeonNumber();
 }
