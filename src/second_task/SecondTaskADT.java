@@ -11,4 +11,10 @@ package second_task;
  * This interface  will be implemented by class SecondTask.
  */
 public interface SecondTaskADT {
+    /**
+     * This method will calculate your age.
+     *
+     * @return the age of a person.
+     */
+    int ageCalculator();
 }
