@@ -8,6 +8,8 @@
 package first_task;
 
 public class FirstTask implements FirstTaskADT {
+    private int userInputNumber; //  private instance varaible
+
     @Override
     public void checkingNumberForStrongNumber() {
 
