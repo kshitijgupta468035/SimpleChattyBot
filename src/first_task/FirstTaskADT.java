@@ -30,9 +30,4 @@ public interface FirstTaskADT {
      * This method will check the number is Neon Number or not.
      */
     void checkingNumberForNeonNumber();
-
-    /**
-     * This method will check the number is Sunny Number or not.
-     */
-    void checkingNumberForSunnyNumber();
 }
