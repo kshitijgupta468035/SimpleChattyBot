@@ -125,7 +125,14 @@ public class FirstTask implements FirstTaskADT {
 
     @Override
     public void checkingNumberForSpyNumber() {
+        int sumOfNumber = sumOfNumber(userInputNumber);
+        int productOfNumber = productOfNumber(userInputNumber);
 
+        if (sumOfNumber == productOfNumber) {
+            System.out.println("\033[1;94m" + "\nYour number is Spy Number." + "\033[0m");
+        } else {
+            System.out.println("\033[1;94m" + "\nYour number is not a Spy Number." + "\033[0m");
+        }
     }
 
     @Override
