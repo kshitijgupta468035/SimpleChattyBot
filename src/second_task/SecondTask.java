@@ -8,6 +8,11 @@
 package second_task;
 
 public class SecondTask implements SecondTaskADT {
+    // create three private instance variables
+    private int firstRemainder;
+    private int secondRemainder;
+    private int thirdRemainder;
+
     @Override
     public int ageCalculator() {
         return 0;
