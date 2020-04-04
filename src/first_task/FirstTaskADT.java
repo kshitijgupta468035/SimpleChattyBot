@@ -20,4 +20,9 @@ public interface FirstTaskADT {
      * This method is used to check the Number whether it is Disarium Number or Not
      */
     void checkingNumberForDisariumNumber();
+
+    /**
+     * This method is used to check the Number whether it is Spy Number or not.
+     */
+    void checkingNumberForSpyNumber();
 }
