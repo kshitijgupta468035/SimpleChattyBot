@@ -11,4 +11,8 @@ package first_task;
  * This Interface will be implemented by class FirstTask.
  */
 public interface FirstTaskADT {
+    /**
+     * This method is used to check the Number whether it is Strong Number or Not
+     */
+    void checkingNumberForStrongNumber();
 }
