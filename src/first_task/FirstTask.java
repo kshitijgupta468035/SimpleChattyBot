@@ -155,6 +155,13 @@ public class FirstTask implements FirstTaskADT {
 
     @Override
     public void checkingNumberForSunnyNumber() {
+        int add = userInputNumber + 1;
+        double root = Math.sqrt(add);
 
+        if ((int) root == root) {
+            System.out.println("\033[1;94m" + "\nYour number is a Sunny Number." + "\033[0m");
+        } else {
+            System.out.println("\033[1;94m" + "\nYour number is not a sunny Number." + "\033[0m");
+        }
     }
 }
