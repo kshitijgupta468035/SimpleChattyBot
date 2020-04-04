@@ -63,7 +63,28 @@ public class FirstTask implements FirstTaskADT {
 
     @Override
     public void checkingNumberForDisariumNumber() {
+        int temp = userInputNumber;
+        int temp1 = userInputNumber;
+        int count = 0;
+        while (userInputNumber > 0) {
+            count++;
+            userInputNumber = userInputNumber / 10;
+        }
 
+        int sum = 0;
+        int f;
+        while (temp > 0) {
+            f = temp % 10;
+            sum = sum + (int) Math.pow(f, count);
+            count--;
+            temp = temp / 10;
+        }
+
+        if (sum == temp1) {
+            System.out.println("\033[1;94m" + "Your number is Disarium Number." + "\033[0m");
+        } else {
+            System.out.println("\033[1;94m" + "\nYour number is not a Disarium Number." + "\033[0m");
+        }
     }
 
     @Override
