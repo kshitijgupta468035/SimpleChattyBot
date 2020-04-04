@@ -137,7 +137,20 @@ public class FirstTask implements FirstTaskADT {
 
     @Override
     public void checkingNumberForNeonNumber() {
+        int square = userInputNumber * userInputNumber;
+        int temp;
+        int sum = 0;
+        while (square > 0) {
+            temp = square % 10;
+            sum = sum + temp;
+            square = square / 10;
+        }
 
+        if (sum == userInputNumber) {
+            System.out.println("\033[1;94m" + "\nYour number is a Neon Number." + "\033[0m");
+        } else {
+            System.out.println("\033[1;94m" + "\nYour number is not a NeonNumber." + "\033[0m");
+        }
     }
 
     @Override
