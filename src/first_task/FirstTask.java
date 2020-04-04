@@ -7,5 +7,29 @@
 
 package first_task;
 
-public class FirstTask {
+public class FirstTask implements FirstTaskADT {
+    @Override
+    public void checkingNumberForStrongNumber() {
+
+    }
+
+    @Override
+    public void checkingNumberForDisariumNumber() {
+
+    }
+
+    @Override
+    public void checkingNumberForSpyNumber() {
+
+    }
+
+    @Override
+    public void checkingNumberForNeonNumber() {
+
+    }
+
+    @Override
+    public void checkingNumberForSunnyNumber() {
+
+    }
 }
