@@ -18,24 +18,24 @@ public class SecondTask implements SecondTaskADT {
         return firstRemainder;
     }
 
-    // getter method for private varaible secondRemainder
-    public int getSecondRemainder() {
-        return secondRemainder;
-    }
-
-    // getter method for private varaible thirdRemainder
-    public int getThirdRemainder() {
-        return thirdRemainder;
-    }
-
     // setter method for private varaible firstRemainder
     public void setFirstRemainder(int firstRemainder) {
         this.firstRemainder = firstRemainder;
     }
 
+    // getter method for private varaible secondRemainder
+    public int getSecondRemainder() {
+        return secondRemainder;
+    }
+
     // setter method for private varaible secondRemainder
     public void setSecondRemainder(int secondRemainder) {
         this.secondRemainder = secondRemainder;
+    }
+
+    // getter method for private varaible thirdRemainder
+    public int getThirdRemainder() {
+        return thirdRemainder;
     }
 
     // setter method for private varaible thirdRemainder
