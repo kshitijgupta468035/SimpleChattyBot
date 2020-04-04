@@ -25,6 +25,21 @@ public class FirstTask implements FirstTaskADT {
         this.userInputNumber = userInputNumber;
     }
 
+    /**
+     * This method will find the factorial of a number.
+     *
+     * @param number the number whose factorial to be find.
+     * @return the factorial of a number.
+     */
+    private int forFindingFactorial(int number) {
+        int f = 1;
+        for (int i = 1; i <= number; i++) {
+            f = f * i;
+        }
+
+        return f;
+    }
+
     @Override
     public void checkingNumberForStrongNumber() {
 
