@@ -45,6 +45,9 @@ public class SecondTask implements SecondTaskADT {
 
     @Override
     public int ageCalculator() {
-        return 0;
+        // formula to calculate age
+        int age = (firstRemainder * 70 + secondRemainder * 21 + thirdRemainder * 15) % 105;
+
+        return age;
     }
 }
