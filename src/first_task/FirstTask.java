@@ -15,6 +15,11 @@ public class FirstTask implements FirstTaskADT {
         this.userInputNumber = userInputNumber;
     }
 
+    // getter method for private varaiable userInputNumber
+    public int getUserInputNumber() {
+        return userInputNumber;
+    }
+
     @Override
     public void checkingNumberForStrongNumber() {
 
