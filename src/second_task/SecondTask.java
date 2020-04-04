@@ -7,5 +7,9 @@
 
 package second_task;
 
-public class SecondTask {
+public class SecondTask implements SecondTaskADT {
+    @Override
+    public int ageCalculator() {
+        return 0;
+    }
 }
