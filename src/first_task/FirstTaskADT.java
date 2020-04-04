@@ -15,9 +15,4 @@ public interface FirstTaskADT {
      * This method is used to check the Number whether it is Strong Number or Not
      */
     void checkingNumberForStrongNumber();
-
-    /**
-     * This method is used to check the Number whether it is Disarium Number or Not
-     */
-    void checkingNumberForDisariumNumber();
 }
