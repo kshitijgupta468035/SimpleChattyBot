@@ -28,6 +28,21 @@ public class SecondTask implements SecondTaskADT {
         return thirdRemainder;
     }
 
+    // setter method for private varaible firstRemainder
+    public void setFirstRemainder(int firstRemainder) {
+        this.firstRemainder = firstRemainder;
+    }
+
+    // setter method for private varaible secondRemainder
+    public void setSecondRemainder(int secondRemainder) {
+        this.secondRemainder = secondRemainder;
+    }
+
+    // setter method for private varaible thirdRemainder
+    public void setThirdRemainder(int thirdRemainder) {
+        this.thirdRemainder = thirdRemainder;
+    }
+
     @Override
     public int ageCalculator() {
         return 0;
