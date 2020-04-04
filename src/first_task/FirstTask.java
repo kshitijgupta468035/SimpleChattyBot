@@ -20,6 +20,11 @@ public class FirstTask implements FirstTaskADT {
         return userInputNumber;
     }
 
+    // setter method for private varaiable userInputNumber
+    public void setUserInputNumber(int userInputNumber) {
+        this.userInputNumber = userInputNumber;
+    }
+
     @Override
     public void checkingNumberForStrongNumber() {
 
