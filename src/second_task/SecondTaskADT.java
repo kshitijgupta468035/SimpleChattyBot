@@ -7,5 +7,8 @@
 
 package second_task;
 
+/**
+ * This interface  will be implemented by class SecondTask.
+ */
 public interface SecondTaskADT {
 }
