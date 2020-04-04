@@ -40,6 +40,24 @@ public class FirstTask implements FirstTaskADT {
         return f;
     }
 
+    /**
+     * This method will find the sum of a number.
+     *
+     * @param number the number whose sum to be find.
+     * @return the sum of a number.
+     */
+    private int sumOfNumber(int number) {
+        int value;
+        int sum = 0;
+        while (number > 0) {
+            value = number % 10;
+            sum = sum + value;
+            number = number / 10;
+        }
+
+        return sum;
+    }
+
     @Override
     public void checkingNumberForStrongNumber() {
         int temp = userInputNumber;
