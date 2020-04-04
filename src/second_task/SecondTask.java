@@ -13,6 +13,21 @@ public class SecondTask implements SecondTaskADT {
     private int secondRemainder;
     private int thirdRemainder;
 
+    // getter method for private varaible firstRemainder
+    public int getFirstRemainder() {
+        return firstRemainder;
+    }
+
+    // getter method for private varaible secondRemainder
+    public int getSecondRemainder() {
+        return secondRemainder;
+    }
+
+    // getter method for private varaible thirdRemainder
+    public int getThirdRemainder() {
+        return thirdRemainder;
+    }
+
     @Override
     public int ageCalculator() {
         return 0;
