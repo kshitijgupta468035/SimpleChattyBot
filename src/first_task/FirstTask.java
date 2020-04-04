@@ -10,6 +10,11 @@ package first_task;
 public class FirstTask implements FirstTaskADT {
     private int userInputNumber; //  private instance varaible
 
+    // Create a constructor which is used to initalize instance variable(userInputNumber)
+    public FirstTask(int userInputNumber) {
+        this.userInputNumber = userInputNumber;
+    }
+
     @Override
     public void checkingNumberForStrongNumber() {
 
