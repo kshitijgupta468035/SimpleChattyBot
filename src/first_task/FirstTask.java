@@ -58,6 +58,24 @@ public class FirstTask implements FirstTaskADT {
         return sum;
     }
 
+    /**
+     * This method will find the product of a number.
+     *
+     * @param number the number to whose product to be find.
+     * @return the product of a number.
+     */
+    private int productOfNumber(int number) {
+        int value;
+        int product = 1;
+        while (number > 0) {
+            value = number % 10;
+            product = product * value;
+            number = number / 10;
+        }
+
+        return product;
+    }
+
     @Override
     public void checkingNumberForStrongNumber() {
         int temp = userInputNumber;
