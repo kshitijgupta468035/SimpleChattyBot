@@ -42,7 +42,23 @@ public class FirstTask implements FirstTaskADT {
 
     @Override
     public void checkingNumberForStrongNumber() {
+        int temp = userInputNumber;
+        int temp1;
+        int temp2;
+        int sum = 0;
 
+        while (userInputNumber > 0) {
+            temp1 = userInputNumber % 10;
+            temp2 = forFindingFactorial(temp1);
+            sum = sum + temp2;
+            userInputNumber = userInputNumber / 10;
+        }
+
+        if (temp == sum) {
+            System.out.println("\033[1;94m" + "\nYour number is Strong number." + "\033[0m");
+        } else {
+            System.out.println("\033[1;94m" + "\nYour number is not a Strong Number." + "\033[0m");
+        }
     }
 
     @Override
