@@ -96,6 +96,9 @@ public class Main extends Thread {
                     Thread.sleep(300);
                     System.out.println("\nIf you want to check another number press 'y' otherwise 'n'");
                     String userResponse = scan.nextLine().trim();
+                    userResponse = userResponse.toLowerCase();
+
+
 
                 } while (true);
             }
