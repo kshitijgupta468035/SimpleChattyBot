@@ -113,6 +113,10 @@ public class Main extends Thread {
                 Thread.sleep(300);
                 System.out.println("You have selected the 2 option.");
                 Thread.sleep(300);
+
+                do {
+
+                } while (true);
             }
 
         } while (response == true);
