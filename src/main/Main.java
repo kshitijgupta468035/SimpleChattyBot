@@ -42,6 +42,11 @@ public class Main extends Thread {
             int selectionOfUser = scan.nextInt();
             scan.nextLine();
 
+            // checking selectionOfUser
+            if (selectionOfUser == 1) {
+                Thread.sleep(300);
+                System.out.println("You selected task 1.");
+            }
         } while (response == true);
     }
 }
