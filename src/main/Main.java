@@ -8,6 +8,7 @@
 package main;
 
 import first_task.FirstTask;
+import fourth_task.FourthTask;
 import second_task.SecondTask;
 import third_task.ThirdTask;
 
@@ -202,6 +203,9 @@ public class Main extends Thread {
 
                 Thread.sleep(300);
                 System.out.println("\nAre you ready, Let the game begin.");
+
+                // create object for class FourthTask name object4
+                FourthTask object4 = new FourthTask();
             }
         } while (response == true);
     }
