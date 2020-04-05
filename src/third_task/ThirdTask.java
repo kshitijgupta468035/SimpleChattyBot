@@ -78,7 +78,7 @@ public class ThirdTask implements ThirdTaskADT {
                     int result = firstNumber / secondNumber;
                     System.out.println("\033[1;94m" + "\nYour answer is " + result + "." + "\033[0m");
                 } catch (ArithmeticException e) {
-                    System.out.println("\033[1;94m" + "\nDivide by Zero." + "\033[0m");
+                    System.out.println("\033[1;94m" + "\nNumber Divide by Zero." + "\033[0m");
                 }
                 break;
             case "%":
