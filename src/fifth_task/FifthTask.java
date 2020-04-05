@@ -7,10 +7,7 @@
 
 package fifth_task;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.Writer;
+import java.io.*;
 import java.util.Scanner;
 
 public class FifthTask implements FifthTaskADT {
@@ -64,7 +61,27 @@ public class FifthTask implements FifthTaskADT {
 
     @Override
     public String readDataFromFile() throws IOException {
-        return null;
+        System.out.println("Enter the name of the file.");
+        Scanner scan = new Scanner(System.in);
+        String nameOfFile = scan.nextLine().trim();
+
+        File f = new File(nameOfFile);
+        Reader r = new FileReader(f);
+
+        // Read data from a file
+        BufferedReader br = new BufferedReader(r);
+        String msg;
+        while ((msg = br.readLine()) != null) {
+            System.out.println(msg);
+        }
+        System.out.println("\n\033[1;94m" + "Data successfully readed." + "\033[0m");
+        r.close();
+
+        System.out.println("\nIf you want to do anything else in you notebook press 'y' otherwise 'n'.");
+        String tempResponse = scan.nextLine().trim();
+        tempResponse = tempResponse.toLowerCase();
+
+        return tempResponse;
     }
 
     @Override
