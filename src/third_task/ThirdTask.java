@@ -33,6 +33,11 @@ public class ThirdTask implements ThirdTaskADT {
         return secondNumber;
     }
 
+    // setter method for private variable secondNumber
+    public void setSecondNumber(int secondNumber) {
+        this.secondNumber = secondNumber;
+    }
+
     @Override
     public void basicCalculator(String operator) {
 
