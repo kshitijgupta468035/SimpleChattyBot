@@ -12,6 +12,12 @@ public class ThirdTask implements ThirdTaskADT {
     private int firstNumber;
     private int secondNumber;
 
+    // Constructor to initalize the instance variables
+    public ThirdTask(int firstNumber, int secondNumber) {
+        this.firstNumber = firstNumber;
+        this.secondNumber = secondNumber;
+    }
+
     @Override
     public void basicCalculator(String operator) {
 
