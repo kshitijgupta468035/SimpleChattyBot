@@ -71,6 +71,27 @@ public class Main extends Thread {
 
                     // creating object for class FirstTask
                     FirstTask object1 = new FirstTask(numberToBeChecked);
+
+                    switch (userRequirement) {
+                        case "a":
+                            object1.checkingNumberForStrongNumber(); // method call for checking Strong Number
+                            break;
+                        case "b":
+                            object1.checkingNumberForDisariumNumber(); // method call for checking Disarium Number
+                            break;
+                        case "c":
+                            object1.checkingNumberForSpyNumber(); // method call for checking Spy Number
+                            break;
+                        case "d":
+                            object1.checkingNumberForNeonNumber(); // method call for checking Neon Number
+                            break;
+                        case "e":
+                            object1.checkingNumberForSunnyNumber(); // method call for checking Sunny Number
+                            break;
+                        default:
+                            System.out.println("Invalid Input.");
+                            break;
+                    }
                 } while (true);
             }
         } while (response == true);
