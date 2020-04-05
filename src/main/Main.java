@@ -98,8 +98,15 @@ public class Main extends Thread {
                     String userResponse = scan.nextLine().trim();
                     userResponse = userResponse.toLowerCase();
 
-
-
+                    // checking if tempResponse is yes or no
+                    if (userResponse.equals("y")) {
+                        continue;
+                    } else if (userResponse.equals("n")) {
+                        break;
+                    } else {
+                        System.out.println("Invalid Input");
+                        break;
+                    }
                 } while (true);
             }
         } while (response == true);
