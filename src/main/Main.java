@@ -138,6 +138,16 @@ public class Main extends Thread {
                     System.out.println("\nIf you want to me to guess age of another person press 'y' otherwise 'n'.");
                     String userResponse = scan.nextLine().trim();
                     userResponse = userResponse.toLowerCase();
+
+                    // checking userResponse is yes or no
+                    if (userResponse.equals("y")) {
+                        continue;
+                    } else if (userResponse.equals("n")) {
+                        break;
+                    } else {
+                        System.out.println("Invalid Input.");
+                        break;
+                    }
                 } while (true);
             }
 
