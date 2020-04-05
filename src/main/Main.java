@@ -17,5 +17,7 @@ public class Main extends Thread {
         String userName = scan.nextLine();
         Thread.sleep(300);
         System.out.println("Hello!! " + userName + " Nice to meet you.");
+
+        boolean response = true;
     }
 }
