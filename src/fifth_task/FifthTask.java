@@ -86,6 +86,23 @@ public class FifthTask implements FifthTaskADT {
 
     @Override
     public String deleteFile() throws IOException {
-        return null;
+        System.out.println("Enter the name of the file.");
+        Scanner scan = new Scanner(System.in);
+        String nameOfFile = scan.nextLine();
+
+        File f = new File(nameOfFile);
+        boolean b = f.delete(); // this will delete the file
+
+        if (b == true) {
+            System.out.println("\033[1;94m" + "\nYour file " + nameOfFile + " is deleted. Exit the program to see changes." + "\033[0m");
+        } else {
+            System.out.println("\033[1;94m" + "\nYour file " + nameOfFile + " is not deleted. Exit the program to see changes." + "\033[0m");
+        }
+
+        System.out.println("\nIf you want to do anything else in you notebook press 'y' otherwise 'n'.");
+        String tempResponse = scan.nextLine().trim();
+        tempResponse = tempResponse.toLowerCase();
+
+        return tempResponse;
     }
 }
