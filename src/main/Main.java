@@ -209,7 +209,8 @@ public class Main extends Thread {
                 object4.guessGame(); // method call to play guess game
 
             } else if (selectionOfUser == 5) {
-
+                Thread.sleep(300);
+                System.out.println("You have selected the option 5.");
             }
         } while (response == true);
     }
