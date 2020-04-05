@@ -252,6 +252,9 @@ public class Main extends Thread {
                         break;
                     }
                 } while (true);
+
+            } else if (selectionOfUser == 6) {
+
             }
         } while (response == true);
     }
