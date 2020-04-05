@@ -7,6 +7,8 @@
 
 package main;
 
+import first_task.FirstTask;
+
 import java.util.Scanner;
 
 public class Main extends Thread {
@@ -66,6 +68,9 @@ public class Main extends Thread {
                     System.out.println("\nEnter your choice.");
                     String userRequirement = scan.nextLine().trim();
                     userRequirement = userRequirement.toLowerCase();
+
+                    // creating object for class FirstTask
+                    FirstTask object1 = new FirstTask(numberToBeChecked);
                 } while (true);
             }
         } while (response == true);
