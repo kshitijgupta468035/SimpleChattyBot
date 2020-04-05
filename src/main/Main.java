@@ -211,6 +211,10 @@ public class Main extends Thread {
             } else if (selectionOfUser == 5) {
                 Thread.sleep(300);
                 System.out.println("You have selected the option 5.");
+
+                do {
+
+                } while (true);
             }
         } while (response == true);
     }
