@@ -48,6 +48,9 @@ public class Main extends Thread {
                 System.out.println("You selected task 1.");
 
                 Thread.sleep(300);
+                do {
+
+                } while (true);
             }
         } while (response == true);
     }
