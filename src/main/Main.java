@@ -206,6 +206,7 @@ public class Main extends Thread {
 
                 // create object for class FourthTask name object4
                 FourthTask object4 = new FourthTask();
+                object4.guessGame(); // method call to play guess game
             }
         } while (response == true);
     }
