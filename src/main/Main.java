@@ -49,7 +49,8 @@ public class Main extends Thread {
 
                 Thread.sleep(300);
                 do {
-
+                    System.out.println("Write the number to be checked.");
+                    int numberToBeChecked = scan.nextInt();
                 } while (true);
             }
         } while (response == true);
