@@ -21,6 +21,8 @@ public class FourthTask implements FourthTaskADT {
 
     @Override
     public void guessGame() {
-
+        boolean response = true;
+        do {
+        } while (response == true);
     }
 }
