@@ -120,6 +120,8 @@ public class Main extends Thread {
 
                     System.out.println("\nEnter first remainder.");
                     int firstRemainder = scan.nextInt();
+                    System.out.println("Enter second remainder.");
+                    int secondRemainder = scan.nextInt();
 
                 } while (true);
             }
