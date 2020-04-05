@@ -110,7 +110,9 @@ public class Main extends Thread {
                 } while (true);
 
             } else if (selectionOfUser == 2) {
-
+                Thread.sleep(300);
+                System.out.println("You have selected the 2 option.");
+                Thread.sleep(300);
             }
 
         } while (response == true);
