@@ -72,6 +72,23 @@ public class ThirdTask implements ThirdTaskADT {
             case "*":
                 System.out.println("\033[1;94m" + "\nYour answer is " + (firstNumber * secondNumber) + "." + "\033[0m");
                 break;
+            case "/":
+                // catching (Arithmetic Exception)
+                try {
+                    int result = firstNumber / secondNumber;
+                    System.out.println("\033[1;94m" + "\nYour answer is " + result + "." + "\033[0m");
+                } catch (ArithmeticException e) {
+                    System.out.println("\033[1;94m" + "\nDivide by Zero." + "\033[0m");
+                }
+                break;
+            case "%":
+                System.out.println("\033[1;94m" + "\nYour answer is " + (firstNumber % secondNumber) + "." + "\033[0m");
+            case "^":
+                System.out.println("\033[1;94m" + "\nYour answer is " + (int) Math.pow(firstNumber, secondNumber) + "." + "\033[0m");
+                break;
+            default:
+                System.out.println("\033[1;94m" + "\nYou have entered the wrong operator." + "\033[0m");
+                invalidValueHandler(); // method call to invaidValueHandler
         }
     }
 }
