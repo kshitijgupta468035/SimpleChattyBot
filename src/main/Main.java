@@ -170,6 +170,7 @@ public class Main extends Thread {
 
                     // create object for class ThirdTask name object3
                     ThirdTask object3 = new ThirdTask(firstNumber, secondNumber);
+                    object3.basicCalculator(operator); // method call to do calculation
                 } while (true);
             }
         } while (response == true);
