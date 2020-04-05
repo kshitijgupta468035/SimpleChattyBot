@@ -221,6 +221,10 @@ public class Main extends Thread {
                             "Press 3 to read data from a file.\n" +
                             "Press 4 to delete a file.");
                     Thread.sleep(300);
+
+                    System.out.println("Enter your choice.");
+                    int responseForSelection5 = scan.nextInt();
+                    String userResponse = "";
                 } while (true);
             }
         } while (response == true);
