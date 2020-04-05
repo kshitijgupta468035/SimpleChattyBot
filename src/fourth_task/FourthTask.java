@@ -7,5 +7,9 @@
 
 package fourth_task;
 
-public class FourthTask {
+public class FourthTask implements FourthTaskADT {
+    @Override
+    public void guessGame() {
+
+    }
 }
