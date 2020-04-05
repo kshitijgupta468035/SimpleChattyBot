@@ -189,7 +189,19 @@ public class Main extends Thread {
                 } while (true);
 
             } else if (selectionOfUser == 4) {
+                Thread.sleep(300);
+                System.out.println("You have selected the option 4.");
 
+                Thread.sleep(300);
+                System.out.println("\nWe will play a guess game name.");
+                System.out.println("\nRules : I generate a 5 letter random number\n" +
+                        "and you have to guess the number." +
+                        "\n\nFor ex: the number is 13456 and your guessed number is\n" +
+                        "14678 so three words are matching so you will get 3 cows and 3 bulls.\n" +
+                        "\n          //* Press 1 to cancel the game. *//");
+
+                Thread.sleep(300);
+                System.out.println("\nAre you ready, Let the game begin.");
             }
         } while (response == true);
     }
