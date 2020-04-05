@@ -130,6 +130,9 @@ public class Main extends Thread {
                     // create object of class SecondTask name object2
                     SecondTask object2 = new SecondTask(firstRemainder, secondRemainder, thirdRemainder);
                     int userAge = object2.ageCalculator(); // method call to calculate user age
+
+                    Thread.sleep(300);
+                    System.out.println("\033[1;94m" + "\nYour age is " + userAge + " I am right or not!!" + "\033[0m");
                 } while (true);
             }
 
