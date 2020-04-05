@@ -155,6 +155,10 @@ public class Main extends Thread {
                 System.out.println("You have choosed the option 3.");
 
                 do {
+                    System.out.println("I can do calculation for you.");
+                    Thread.sleep(300);
+                    System.out.println("\nEnter first Number.");
+                    int firstNumber = scan.nextInt();
                 } while (true);
             }
         } while (response == true);
