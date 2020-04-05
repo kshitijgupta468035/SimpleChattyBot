@@ -7,5 +7,9 @@
 
 package third_task;
 
-public class ThirdTask {
+public class ThirdTask implements ThirdTaskADT {
+    @Override
+    public void basicCalculator(String operator) {
+
+    }
 }
