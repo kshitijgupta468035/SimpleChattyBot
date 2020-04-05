@@ -92,6 +92,11 @@ public class Main extends Thread {
                             System.out.println("Invalid Input.");
                             break;
                     }
+
+                    Thread.sleep(300);
+                    System.out.println("\nIf you want to check another number press 'y' otherwise 'n'");
+                    String userResponse = scan.nextLine().trim();
+
                 } while (true);
             }
         } while (response == true);
