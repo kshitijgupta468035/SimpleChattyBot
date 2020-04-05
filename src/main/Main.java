@@ -171,6 +171,21 @@ public class Main extends Thread {
                     // create object for class ThirdTask name object3
                     ThirdTask object3 = new ThirdTask(firstNumber, secondNumber);
                     object3.basicCalculator(operator); // method call to do calculation
+
+                    Thread.sleep(300);
+                    System.out.println("\nIf you want to do calculation again press 'y' otherwise 'n'.");
+                    String userResponse = scan.nextLine().trim();
+                    userResponse = userResponse.toLowerCase();
+
+                    // checking userResponse is yes or no
+                    if (userResponse.equals("y")) {
+                        continue;
+                    } else if (userResponse.equals("n")) {
+                        break;
+                    } else {
+                        System.out.println("Invalid Input.");
+                        break;
+                    }
                 } while (true);
             }
         } while (response == true);
