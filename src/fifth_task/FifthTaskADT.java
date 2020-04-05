@@ -36,4 +36,12 @@ public interface FifthTaskADT {
      * @throws IOException if the task is not successfully completed.
      */
     String readDataFromFile() throws IOException;
+
+    /**
+     * This method is used to delete file.
+     *
+     * @return the user choice for next instruction.
+     * @throws IOException if file is not delete properly.
+     */
+    String deleteFile() throws IOException;
 }
