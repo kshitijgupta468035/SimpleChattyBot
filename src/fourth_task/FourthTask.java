@@ -8,6 +8,17 @@
 package fourth_task;
 
 public class FourthTask implements FourthTaskADT {
+    /**
+     * This method will use to generate a random Number.
+     *
+     * @return the generated number.
+     */
+    private int generateRandomNumber() {
+        int randomNumber = (int) (Math.random() * 100000); // generating random number
+
+        return randomNumber;
+    }
+
     @Override
     public void guessGame() {
 
