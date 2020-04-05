@@ -24,6 +24,18 @@ public class Main extends Thread {
             System.out.println();
             System.out.println("I am available at your service and these are some tasks" +
                     " that I can do for you. Task are listed below.");
+
+            Thread.sleep(300);
+            System.out.println();
+            System.out.println("1. I can check for you that the number is whether Strong Number," +
+                    " Disarium Number," +
+                    "\n   Spy Number, Sunny Number, and Neon Number.\n" +
+                    "2. I can caculate Your age." +
+                    "\n3. I can be a calculator for you." +
+                    "\n4. I can play a guess game with you." +
+                    "\n5. I can store your data in my Storage just like notes." +
+                    "\n6. Press 6 to exit.");
+
         } while (response == true);
     }
 }
