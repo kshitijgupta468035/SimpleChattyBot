@@ -7,5 +7,9 @@
 
 package fifth_task;
 
+/**
+ * This interface will be implemented by class FifthTask.
+ */
 public interface FifthTaskADT {
+
 }
