@@ -7,5 +7,26 @@
 
 package fifth_task;
 
-public class FifthTask {
+import java.io.IOException;
+
+public class FifthTask implements FifthTaskADT {
+    @Override
+    public String createNewFile() throws IOException {
+        return null;
+    }
+
+    @Override
+    public String addDataToFile() throws IOException {
+        return null;
+    }
+
+    @Override
+    public String readDataFromFile() throws IOException {
+        return null;
+    }
+
+    @Override
+    public String deleteFile() throws IOException {
+        return null;
+    }
 }
