@@ -18,6 +18,11 @@ public class ThirdTask implements ThirdTaskADT {
         this.secondNumber = secondNumber;
     }
 
+    // getter method for private variable firstNumber
+    public int getFirstNumber() {
+        return firstNumber;
+    }
+
     @Override
     public void basicCalculator(String operator) {
 
