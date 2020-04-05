@@ -7,6 +7,7 @@
 
 package main;
 
+import fifth_task.FifthTask;
 import first_task.FirstTask;
 import fourth_task.FourthTask;
 import second_task.SecondTask;
@@ -225,6 +226,21 @@ public class Main extends Thread {
                     System.out.println("Enter your choice.");
                     int responseForSelection5 = scan.nextInt();
                     String userResponse = "";
+
+                    // checking responseForSelection5
+                    if (responseForSelection5 == 1) {
+                        FifthTask object5 = new FifthTask(); // create object for class FifthTask name object5
+                        userResponse = object5.createNewFile(); // method call to create a new file
+                    } else if (responseForSelection5 == 2) {
+                        FifthTask object5 = new FifthTask(); // create object for class FifthTask name object5
+                        userResponse = object5.addDataToFile(); // method call to add data in pre-existing file
+                    } else if (responseForSelection5 == 4) {
+                        FifthTask object5 = new FifthTask(); // create object for class FifthTask name object5
+                        userResponse = object5.deleteFile(); // method call to delete a file
+                    } else if (responseForSelection5 == 3) {
+                        FifthTask object5 = new FifthTask(); // create object for class FifthTask name object5
+                        userResponse = object5.readDataFromFile(); // method call to read data from a file
+                    }
                 } while (true);
             }
         } while (response == true);
