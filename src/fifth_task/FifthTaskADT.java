@@ -21,4 +21,12 @@ public interface FifthTaskADT {
      */
     String createNewFile() throws IOException;
 
+    /**
+     * This method is used to add data in the pre-esxisting file.
+     *
+     * @return the user choice for next instruction.
+     * @throws IOException if not done successfully.
+     */
+    String addDataToFile() throws IOException;
+
 }
