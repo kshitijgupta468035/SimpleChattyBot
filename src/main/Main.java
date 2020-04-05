@@ -117,6 +117,10 @@ public class Main extends Thread {
                 do {
                     System.out.println("Now I will guess your age so please " +
                             "divide your age by 3, 5, and 7 and tell me the remainders.");
+
+                    System.out.println("\nEnter first remainder.");
+                    int firstRemainder = scan.nextInt();
+
                 } while (true);
             }
 
