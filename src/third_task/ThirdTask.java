@@ -61,6 +61,17 @@ public class ThirdTask implements ThirdTaskADT {
 
     @Override
     public void basicCalculator(String operator) {
-
+        // for checking the operator
+        switch (operator) {
+            case "+":
+                System.out.println("\033[1;94m" + "\nYour answer is " + (firstNumber + secondNumber) + "." + "\033[0m");
+                break;
+            case "-":
+                System.out.println("\033[1;94m" + "\nYour answer is " + (firstNumber - secondNumber) + "." + "\033[0m");
+                break;
+            case "*":
+                System.out.println("\033[1;94m" + "\nYour answer is " + (firstNumber * secondNumber) + "." + "\033[0m");
+                break;
+        }
     }
 }
