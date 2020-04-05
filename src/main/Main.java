@@ -254,7 +254,12 @@ public class Main extends Thread {
                 } while (true);
 
             } else if (selectionOfUser == 6) {
+                Thread.sleep(300);
+                System.out.println("Thank you, I hope you enjoyed spending time with me.");
 
+                Thread.sleep(500);
+                System.out.println("\033[1;94m" + "Good bye, Nice to meet you " + userName + " I hope we will meet soon." + "\033[0m");
+                break;
             }
         } while (response == true);
     }
