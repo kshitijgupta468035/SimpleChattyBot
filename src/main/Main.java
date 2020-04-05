@@ -9,6 +9,7 @@ package main;
 
 import first_task.FirstTask;
 import second_task.SecondTask;
+import third_task.ThirdTask;
 
 import java.util.Scanner;
 
@@ -162,6 +163,13 @@ public class Main extends Thread {
                     System.out.println("Enter second Number.");
                     int secondNumber = scan.nextInt();
                     scan.nextLine();
+                    Thread.sleep(300);
+                    System.out.println("Choose the opertaion you want to perform with these two numbers from the list below." +
+                            "\n *, /, + , - , %, ^");
+                    String operator = scan.nextLine().trim();
+
+                    // create object for class ThirdTask name object3
+                    ThirdTask object3 = new ThirdTask(firstNumber, secondNumber);
                 } while (true);
             }
         } while (response == true);
