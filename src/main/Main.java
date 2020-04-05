@@ -213,7 +213,14 @@ public class Main extends Thread {
                 System.out.println("You have selected the option 5.");
 
                 do {
-
+                    Thread.sleep(300);
+                    System.out.println("I can be your notebook.");
+                    Thread.sleep(300);
+                    System.out.println("Press 1 to create new file and  data in your notebook.\n" +
+                            "Press 2 to add data in the pre-exissting file.\n" +
+                            "Press 3 to read data from a file.\n" +
+                            "Press 4 to delete a file.");
+                    Thread.sleep(300);
                 } while (true);
             }
         } while (response == true);
