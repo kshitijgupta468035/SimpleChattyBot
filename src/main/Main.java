@@ -36,6 +36,12 @@ public class Main extends Thread {
                     "\n5. I can store your data in my Storage just like notes." +
                     "\n6. Press 6 to exit.");
 
+            Thread.sleep(300);
+            System.out.println("\nWhat would you like to do, my Master" + "\n   Press that number to select the task.");
+
+            int selectionOfUser = scan.nextInt();
+            scan.nextLine();
+
         } while (response == true);
     }
 }
