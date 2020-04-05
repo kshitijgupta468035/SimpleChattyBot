@@ -151,7 +151,11 @@ public class Main extends Thread {
                 } while (true);
 
             } else if (selectionOfUser == 3) {
+                Thread.sleep(300);
+                System.out.println("You have choosed the option 3.");
 
+                do {
+                } while (true);
             }
         } while (response == true);
     }
