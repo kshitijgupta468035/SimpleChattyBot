@@ -13,6 +13,13 @@ public class SecondTask implements SecondTaskADT {
     private int secondRemainder;
     private int thirdRemainder;
 
+    // Constructor to intialize the the instance varaibles
+    public SecondTask(int firstRemainder, int secondRemainder, int thirdRemainder) {
+        this.firstRemainder = firstRemainder;
+        this.secondRemainder = secondRemainder;
+        this.thirdRemainder = thirdRemainder;
+    }
+
     // getter method for private varaible firstRemainder
     public int getFirstRemainder() {
         return firstRemainder;
