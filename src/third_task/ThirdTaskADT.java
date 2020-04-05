@@ -11,4 +11,10 @@ package third_task;
  * This interface will be implemented by class ThirdTask.
  */
 public interface ThirdTaskADT {
+    /**
+     * This method will perform the calculation between two numbers.
+     *
+     * @param operator the operaton to be performed.
+     */
+    void basicCalculator(String operator);
 }
