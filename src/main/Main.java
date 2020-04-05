@@ -159,6 +159,9 @@ public class Main extends Thread {
                     Thread.sleep(300);
                     System.out.println("\nEnter first Number.");
                     int firstNumber = scan.nextInt();
+                    System.out.println("Enter second Number.");
+                    int secondNumber = scan.nextInt();
+                    scan.nextLine();
                 } while (true);
             }
         } while (response == true);
