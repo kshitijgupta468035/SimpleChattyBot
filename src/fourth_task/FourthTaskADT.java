@@ -7,5 +7,8 @@
 
 package fourth_task;
 
+/**
+ * This method will be implemented by class FourthTask.
+ */
 public interface FourthTaskADT {
 }
