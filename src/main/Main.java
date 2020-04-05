@@ -129,6 +129,7 @@ public class Main extends Thread {
 
                     // create object of class SecondTask name object2
                     SecondTask object2 = new SecondTask(firstRemainder, secondRemainder, thirdRemainder);
+                    int userAge = object2.ageCalculator(); // method call to calculate user age
                 } while (true);
             }
 
