@@ -8,6 +8,10 @@
 package third_task;
 
 public class ThirdTask implements ThirdTaskADT {
+    // create two private instance varaibles
+    private int firstNumber;
+    private int secondNumber;
+
     @Override
     public void basicCalculator(String operator) {
 
