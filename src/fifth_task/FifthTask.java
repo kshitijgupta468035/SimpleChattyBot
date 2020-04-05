@@ -40,7 +40,26 @@ public class FifthTask implements FifthTaskADT {
 
     @Override
     public String addDataToFile() throws IOException {
-        return null;
+        System.out.println("Enter the name of file in " +
+                "which you want to add your data.");
+        Scanner scan = new Scanner(System.in);
+        String nameOfFile = scan.nextLine();
+
+        File f = new File(nameOfFile);
+        System.out.println("Enter data in your file.");
+        String data = scan.nextLine();
+
+        Writer fw = new FileWriter(f, true);
+        fw.write(data); // writing data into file
+        fw.write("\n");
+        System.out.println("\n\033[1;94m" + "Your data is added. Exit the program to see changes." + "\033[0m");
+        fw.close();
+
+        System.out.println("\nIf you want to do anything else in you notebook press 'y' otherwise 'n'.");
+        String tempResponse = scan.nextLine().trim();
+        tempResponse = tempResponse.toLowerCase();
+
+        return tempResponse;
     }
 
     @Override
