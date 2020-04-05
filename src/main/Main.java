@@ -20,7 +20,10 @@ public class Main extends Thread {
 
         boolean response = true;
         do {
-
+            Thread.sleep(300);
+            System.out.println();
+            System.out.println("I am available at your service and these are some tasks" +
+                    " that I can do for you. Task are listed below.");
         } while (response == true);
     }
 }
