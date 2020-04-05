@@ -7,5 +7,8 @@
 
 package third_task;
 
+/**
+ * This interface will be implemented by class ThirdTask.
+ */
 public interface ThirdTaskADT {
 }
