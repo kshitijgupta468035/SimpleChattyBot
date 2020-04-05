@@ -8,6 +8,7 @@
 package main;
 
 import first_task.FirstTask;
+import second_task.SecondTask;
 
 import java.util.Scanner;
 
@@ -126,6 +127,8 @@ public class Main extends Thread {
                     int thirdRemainder = scan.nextInt();
                     scan.nextLine();
 
+                    // create object of class SecondTask name object2
+                    SecondTask object2 = new SecondTask(firstRemainder, secondRemainder, thirdRemainder);
                 } while (true);
             }
 
