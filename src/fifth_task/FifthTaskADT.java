@@ -29,4 +29,11 @@ public interface FifthTaskADT {
      */
     String addDataToFile() throws IOException;
 
+    /**
+     * This method will read the data from a file.
+     *
+     * @return the user choice for next instruction.
+     * @throws IOException if the task is not successfully completed.
+     */
+    String readDataFromFile() throws IOException;
 }
