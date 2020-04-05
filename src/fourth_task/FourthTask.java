@@ -23,6 +23,23 @@ public class FourthTask implements FourthTaskADT {
     public void guessGame() {
         boolean response = true;
         do {
+            String randomGuessedNumber = String.valueOf(generateRandomNumber()); // convert generate number into String
+            System.out.println("Enter your guessed number.");
+            Scanner scan = new Scanner(System.in);
+            String guessedNumber = scan.nextLine().trim();
+
+            if (guessedNumber.equals("1")) {
+                break;
+            }
+
+            System.out.println("\033[1;94m" + "The generated number is " + randomGuessedNumber + "." + "\033[0m");
+
+            char[] first = randomGuessedNumber.toCharArray();
+            char[] second = guessedNumber.toCharArray();
+
+            int countCows = 0;
+            int countBulls = 0;
+
         } while (response == true);
     }
 }
