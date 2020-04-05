@@ -51,6 +51,16 @@ public class Main extends Thread {
                 do {
                     System.out.println("Write the number to be checked.");
                     int numberToBeChecked = scan.nextInt();
+
+                    Thread.sleep(500);
+                    System.out.println("\nNow if you want to check " +
+                            "\n     for Strong Number press A" +
+                            "\n     for Disarium Number press B" +
+                            "\n     for Spy Number press C" +
+                            "\n     for Neon Number press D" +
+                            "\n     for Sunny Number press E");
+
+                    scan.nextLine();
                 } while (true);
             }
         } while (response == true);
