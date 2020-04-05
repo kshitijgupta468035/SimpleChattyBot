@@ -61,6 +61,11 @@ public class Main extends Thread {
                             "\n     for Sunny Number press E");
 
                     scan.nextLine();
+
+                    Thread.sleep(300);
+                    System.out.println("\nEnter your choice.");
+                    String userRequirement = scan.nextLine().trim();
+                    userRequirement = userRequirement.toLowerCase();
                 } while (true);
             }
         } while (response == true);
