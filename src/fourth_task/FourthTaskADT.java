@@ -11,4 +11,8 @@ package fourth_task;
  * This method will be implemented by class FourthTask.
  */
 public interface FourthTaskADT {
+    /**
+     * This method will help the user to play a guess game with him/her.
+     */
+    void guessGame();
 }
