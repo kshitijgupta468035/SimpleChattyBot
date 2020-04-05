@@ -133,6 +133,9 @@ public class Main extends Thread {
 
                     Thread.sleep(300);
                     System.out.println("\033[1;94m" + "\nYour age is " + userAge + " I am right or not!!" + "\033[0m");
+
+                    Thread.sleep(300);
+                    System.out.println("\nIf you want to me to guess age of another person press 'y' otherwise 'n'.");
                 } while (true);
             }
 
