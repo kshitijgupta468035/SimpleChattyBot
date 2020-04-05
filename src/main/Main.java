@@ -241,6 +241,16 @@ public class Main extends Thread {
                         FifthTask object5 = new FifthTask(); // create object for class FifthTask name object5
                         userResponse = object5.readDataFromFile(); // method call to read data from a file
                     }
+
+                    // checking userResponse is yes or no
+                    if (userResponse.equals("y")) {
+                        continue;
+                    } else if (userResponse.equals("n")) {
+                        break;
+                    } else {
+                        System.out.println("Invalid Input.");
+                        break;
+                    }
                 } while (true);
             }
         } while (response == true);
