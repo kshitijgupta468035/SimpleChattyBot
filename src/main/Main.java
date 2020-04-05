@@ -115,7 +115,8 @@ public class Main extends Thread {
                 Thread.sleep(300);
 
                 do {
-
+                    System.out.println("Now I will guess your age so please " +
+                            "divide your age by 3, 5, and 7 and tell me the remainders.");
                 } while (true);
             }
 
